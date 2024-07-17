@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+  <head>
+    <title>kenny's playlist</title>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="note.png" />
+    <script src="https://cdn.jsdelivr.net/npm/typeit@6/dist/typeit.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>
+
+  <body>
+    <div id="header">
+      <div id="headerTextBox">
+        <h2 id="greetings"></h2>
+      </div>
+      <div id="headerImageBox">
+        <img src="https://media.giphy.com/media/Y9jqEDr2bfoe4/giphy.gif" />
+      </div>
+    </div>
+
+    <div class="form">
+      <button id="addButton">add songs</button>
+      <button id="deleteButton">delete songs</button>
+      <button id="clearCacheButton">clear cache</button>
+      <button id="mobileButton">mobile site</button>
+      <button id="iframeButton">iframe site</button>
+      <button id="showIframes">show iframes</button>
+      <button id="hideIframes">hide iframes</button>
+    </div>
+
+    <div id="displayAll">
+      <div id="addSettings" class="form">
+        <p>add a new song:</p>
+        <input type="text" placeholder="song name" id="song" />
+        <input type="text" placeholder="artist name" id="artist" />
+        <input type="text" placeholder="song duration" id="length" />
+        <input type="text" placeholder="youtube link" id="link" />
+        <button id="add"><span>add</span></button>
+        <p id="examples"></p>
+      </div>
+
+      <div id="deleteSettings" class="form">
+        <p>delete song:</p>
+        <input
+          type="number"
+          min="1"
+          placeholder="song number"
+          id="deleteSong"
+        />
+        <button id="delete">delete</button>
+        <button id="deleteAll">delete everything</button>
+      </div>
+    </div>
+
+    <div id="cart">
+      <div class="column" id="images"></div>
+
+      <ol>
+        <div class="column" id="songs"></div>
+      </ol>
+
+      <div class="column" id="artists"></div>
+
+      <div class="column" id="lengths"></div>
+
+      <div class="column" id="links"></div>
+
+      <div class="column" id="mobileLinks"></div>
+    </div>
+
+    <button onclick="topFunction()" id="top">top</button>
+    <div id="footer">
+      <p>copyright © kenny llc 2019</p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
