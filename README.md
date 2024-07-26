@@ -1,5 +1,5 @@
-# playlist-old
+# hs-playlist
 
-A past version of playlist that was developed back in high school. 
+A website deployed for memories, showcasing an old high school playlist project.
 
-Deployed just for memories.
+https://kennytrbl.github.io/hs-playlist/
